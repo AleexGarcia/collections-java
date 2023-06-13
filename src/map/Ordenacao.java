@@ -13,7 +13,12 @@ import java.util.TreeSet;
 public class Ordenacao {
 	public static void main(String[] args) {
 		System.out.println("Ordem Aleatoria!");
-		Map<String, Livro> meusLivros = new HashMap<>() {{
+		Map<String, Livro> meusLivros = new HashMap<>() {/**
+			 * 
+			 */
+			private static final long serialVersionUID = 1L;
+
+		{
 			put("Hawking, Stephen", new Livro("Uma breve historia do tempo",45));
 			put("Duhigg, Charles", new Livro("O poder do habito",245));
 			put("Harari, Yuval Noah", new Livro("21 lições para o seculo 21",98));
@@ -23,7 +28,12 @@ public class Ordenacao {
 			System.out.println(livro.getKey() + " - " + livro.getValue().toString());
 		}
 		
-		Map<String, Livro> meusLivros2 = new LinkedHashMap<>() {{
+		Map<String, Livro> meusLivros2 = new LinkedHashMap<>() {/**
+			 * 
+			 */
+			private static final long serialVersionUID = 1L;
+
+		{
 			put("Hawking, Stephen", new Livro("Uma breve historia do tempo",45));
 			put("Duhigg, Charles", new Livro("O poder do habito",245));
 			put("Harari, Yuval Noah", new Livro("21 lições para o seculo 21",98));
