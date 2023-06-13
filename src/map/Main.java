@@ -59,7 +59,6 @@ public class Main {
 			if(iterator.next().equals(15.1)) {
 				iterator.remove();
 			}
-			
 		}
 		
 		
